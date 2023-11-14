@@ -3,7 +3,45 @@ $socail-button-color-hover: #000;
 $social-button-transition-speed: .1s;
 
 :root {
-    font-size: 12px;
+    font-size: 16px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #242424;
+}
+
+#root {
+    align-items: center;
+    color: #fff;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    justify-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    width: 50vw;
+    min-width: 200px;
+    max-width: 900px;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@media (min-device-width:320px) and (max-device-width:768px) {
+    .logo {
+        width: 80vw;
+    }
 }
 
 .socials {
@@ -43,4 +81,8 @@ $social-button-transition-speed: .1s;
         padding: 0;
         line-height: 0;
     }
+}
+
+.phone {
+    padding-top: .5rem;
 }

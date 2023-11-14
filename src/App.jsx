@@ -1,4 +1,3 @@
-import './App.css'
 import './area51.scss'
 import Area51Logo from './assets/area51records.png'
 import { SiDiscogs } from "react-icons/si";
