@@ -1,0 +1,46 @@
+$socail-button-color: #fff;
+$socail-button-color-hover: #000;
+$social-button-transition-speed: .1s;
+
+:root {
+    font-size: 12px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+
+    a {
+        color: $socail-button-color;
+        transition: color $social-button-transition-speed ease-in-out;
+    }
+
+    // TODO: Fix this
+    // a.social-item {
+    //     &-facebook {
+    //         &:hover {
+    //             color: #3b5998;
+    //         }
+    //     }
+    //     &-discogs {
+    //         &:hover {
+    //             color: #333;
+    //         }
+    //     }
+    // }
+
+    a:hover {
+        color: $socail-button-color-hover;
+    }
+
+    & > * {
+        font-size: 3rem;
+        padding: 1rem;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+}
